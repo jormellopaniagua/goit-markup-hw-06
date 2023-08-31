@@ -86,7 +86,7 @@ header {
   background-color: var(--webstudio-color);
   height: 4px;
   border-radius: 2px;
-  animation: alargar 2s linear 1s 1 normal backwards;
+  animation: alargar 0.3s linear 0s 1 normal backwards;
 }
 .whiteNavigation {
   color: var(--main-color, white);
@@ -258,7 +258,7 @@ header {
   display: flex;
   gap: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .client_item {
   display: flex;
@@ -383,11 +383,60 @@ header {
   flex-wrap: wrap;
   gap: 70px;
   align-items: center;
+  justify-content: space-between;
 }
 .footer_social {
   color: var(--main-color);
   font-size: 14px;
   letter-spacing: 0.42px;
+  margin-bottom: 20px;
+}
+.div_form {
+  display: flex;
+  justify-content: right;
+
+  position: relative;
+}
+.footer_form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.suscribe {
+  display: flex;
+  flex-direction: column;
+}
+.footer_mail {
+  width: 358px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer_button {
+  position: relative;
+  align-self: self-end;
+}
+.footer_form .button {
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  padding-left: 40px;
+  /* margin-top: 20px; */
+}
+.subscribe_icon {
+  position: absolute;
+  top: 25%;
+  right: 13px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: var(--main-color);
 }
 .footer_icon {
   display: flex;
