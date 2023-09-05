@@ -415,6 +415,12 @@ header {
   display: flex;
   flex-direction: column;
 }
+.suscribe:hover .footer_mail {
+  border-color: var(--webstudio-color);
+}
+.suscribe:focus-within .footer_mail {
+  border-color: var(--webstudio-color);
+}
 .footer_mail {
   width: 358px;
   height: 50px;
@@ -423,6 +429,9 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  color: var(--main-color);
+  transition: var(--trans-border);
 }
 .footer_button {
   position: relative;
@@ -446,6 +455,7 @@ header {
   height: 24px;
   flex-shrink: 0;
   fill: var(--main-color);
+  cursor: pointer;
 }
 .footer_icon {
   display: flex;

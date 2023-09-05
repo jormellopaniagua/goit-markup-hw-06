@@ -328,11 +328,11 @@
       <section>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <form action="" class="form">
+            <form class="form" autocomplete="on" novalidate>
               <legend class="form_title nosotros">
                 Deje sus datos, nos contactaremos con usted
               </legend>
-              <label class="form_label" for="Nombre">Nombre</label>
+              <label class="form_label" for="name">Nombre</label>
               <div class="input_area">
                 <input class="input" type="text" name="Nombre" id="name" />
                 <svg class="form_icon">
@@ -341,7 +341,7 @@
               </div>
               <label class="form_label" for="phone">Telefono</label>
               <div class="input_area">
-                <input class="input" type="number" name="phone" id="phone" />
+                <input class="input" type="tel" name="phone" id="phone" />
                 <svg class="form_icon">
                   <use href="./icons/symbol-defs.svg#icon-telfono-negro-18dp-1"></use>
                 </svg>
@@ -434,7 +434,7 @@
             </ul>
           </div>
           <div class="div_form">
-            <form action="" method="get" class="footer_form">
+            <form class="footer_form" autocomplete="off" novalidate>
               <div class="suscribe">
                 <label class="footer_social" for="Email">SUSCRIBASE AL BOLETIN INFORMATIVO</label>
                 <input
